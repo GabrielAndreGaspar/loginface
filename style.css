@@ -17,7 +17,6 @@ main{
 .container{
     margin: 0 auto;
     padding: 20px 0;
-    position: relative;
     width:auto;
     max-width: 980px;
     display: flex;
@@ -311,17 +310,11 @@ main{
 }
 
 
+
 @media (max-width: 891px){
 
-    .container{
-        display: flex;       
-    }
-
-}
-
-@media (max-width: 467px){
-
     .container-login{
+        float: none;
         margin-left: 10px;
     }
 
