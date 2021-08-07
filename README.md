@@ -1,2 +1,2 @@
 # loginface
-Practicing CSS and HTML and reproducing the facebook login page.
+Practicing CSS / HTML and reproducing the facebook login page.
