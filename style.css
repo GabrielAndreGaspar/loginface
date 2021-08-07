@@ -4,25 +4,29 @@ body{
     font-size: 12px;
     direction: ltr;
     line-height: 1.34;
-    height: 100%;
-}
-
-.container{
-    margin: 0 auto;
-    padding: 20px 0;
-    position: relative;
-    width: 980px;
 }
 
 main{
     padding-bottom: 112px;
     padding-top: 72px;
     min-width: 500px;
+    width:auto;
+    height: auto;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    width:auto;
+    max-width: 980px;
+    display: flex;
 }
 
 .logo{
     display: inline-block;
     width: 580px;
+    height: 300px;
     box-sizing: border-box;
     margin-right: 0;
     padding-right: 32px;
@@ -106,7 +110,7 @@ main{
 }
 
 .input{
-    width: 364px;
+    
     display: inline-block;
     margin: auto;
     padding: 6px 0;
@@ -120,7 +124,6 @@ main{
     width: 330px;
     margin: 0;
     border: 1px solid #dddfe2;
-    /* background: #fff url(images/hidden.png) no-repeat 90% center; */
 }
 
 .style-input::placeholder{
@@ -139,12 +142,13 @@ main{
 }
 
 .container-password{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     background: #FFFFFF url(images/boardinput.png) repeat-x;
     border-radius: 6px;
     font-size: 17px;
-    padding: 7px 16px 3px;
-    width: 330px;
+    padding: 7px 8px 8px 16px;
+    width: 338px;
     margin: 1.5% auto;
     border: 1px solid #dddfe2;
 }
@@ -162,7 +166,7 @@ main{
     float: left;
     font-size: 17px;
     padding: 0;
-    width: 300px;
+    width: 310px;
 }
 
 .style-input-password{
@@ -184,10 +188,7 @@ main{
     border-radius: 50%;
     width: 28px;
     height: 28px;
-    top: 2px;
-    right: 2.8%;
-    position: absolute;
-    top: 30%;
+    margin-top: 1%;
 }
 
 .eye-visible:hover{
@@ -200,14 +201,13 @@ main{
 
 .active{
     position: relative;
-    top: 18%;
+    top: 20%;
 }
 
 .hidden{
-    position: absolute;
-    top: 30%;
-    right: 2.8%;
-    visibility: hidden; 
+    width: 28px;
+    height: 28px;
+    visibility: hidden;
 }
 
 .forgot-text{
@@ -283,4 +283,59 @@ main{
 .style-btn-create:focus{
     box-shadow: 0 0 1px 2px rgb(88 144 255 / 75%), 0 1px 1px rgb(0 0 0 / 15%);
     outline: none;
+}
+
+
+@media (max-width: 1060px){
+    .container{
+        margin: 0 40px;
+        width: auto;
+        display: block;       
+    }
+
+    .container-login{
+        float: right;
+    }
+
+    
+    .logo{
+        width: 400px;
+    }
+
+
+    .text{
+        width: 380px;
+        font-size: 24px;
+    }
+
+}
+
+
+@media (max-width: 891px){
+
+    .container{
+        display: flex;       
+    }
+
+}
+
+@media (max-width: 467px){
+
+    .container-login{
+        margin-left: 10px;
+    }
+
+    .logo{
+        margin-left: 17px;
+        justify-content: center;
+    }
+    .image{
+        margin-left: 0;
+    }
+      
+    .container{
+        text-align: center;
+        flex-direction: column;
+    }
+    
 }
