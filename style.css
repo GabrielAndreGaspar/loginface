@@ -173,7 +173,6 @@ main{
     caret-color: #1877f2;
 }
 
-
 .style-input-password::placeholder{
     color: #90949C;
 }
@@ -284,8 +283,8 @@ main{
     outline: none;
 }
 
-
 @media (max-width: 1060px){
+    
     .container{
         margin: 0 40px;
         width: auto;
@@ -309,11 +308,19 @@ main{
 
 }
 
-
-
 @media (max-width: 891px){
 
+    .logo{
+        padding-left: 5px;
+        height: 230px;
+    }
+
+    .container-iamge{
+        padding-top: 0;
+    }
+
     .container-login{
+        padding: 0;
         float: none;
         margin-left: 10px;
     }
@@ -328,6 +335,7 @@ main{
       
     .container{
         text-align: center;
+        padding-top: 0px;
         flex-direction: column;
     }
     
